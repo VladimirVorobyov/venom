@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Venom2 - о фильме</title>
 </head>
@@ -16,12 +17,21 @@
   <img width="46" height="71" src="img/logo.png" alt="logo" class="logo-image">
   </a>
   <nav class="nav">
+    <button class="menu-button">
+      <span class="menu-button-text">MENU</span>
+      <img width='24' height='14' src="img/menu.svg" alt="svg-menu" class="menu-button-svg">
+    </button>
+    <div class="conteiner-menu">
+    <button class="menu-button-close">
+      <span class="menu-button-text">Close</span>
+      <img src="img/close1.svg" alt="close" class="menu-button-icon">
+    </button>
     <ul class="nav-menu">
       <li class="nav-menu-item">
         <a href="about.html" class="nav-menu-link">о фильме</a>
       </li>
       <li class="nav-menu-item">
-        <a href="#" class="nav-menu-link">трейлер</a>
+        <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="nav-menu-link">трейлер</a>
       </li>
       <li class="nav-menu-item">
         <a href="#" class="nav-menu-link">актеры</a>
@@ -30,6 +40,7 @@
         <a href="#" class="nav-menu-link">премьера</a>
       </li>
     </ul>
+    </div>
   </nav>
 </header>
 <section class="content">
@@ -53,9 +64,9 @@
        <li class="list-item">Пегги Лу</li>
      </ul>
      <div class="trailer">
-       <button class="play">
+       <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="play">
          <img src="img/play-trell.svg" alt="icon-play" class="play-icon">
-       </button>
+       </a>
      </div>
   </div>
   <div class="col col2">
@@ -79,5 +90,8 @@
     </div>
   </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
