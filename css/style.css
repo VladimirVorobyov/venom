@@ -6,6 +6,10 @@ body {
   margin: auto;
   width: 90%;
 }
+
+.form {
+  margin-top: 50px;
+}
 header {
   display: flex;
   align-items: center;
